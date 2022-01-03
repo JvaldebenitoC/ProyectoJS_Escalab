@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Piedra-Papel-Tijeras</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper" >
+        <div class="title-text">
+            <div class="title">Piedra / Papel / Tijeras</div>
+        </div>
+        <div class="form-container">
+            <div class="form" id="form">
+                <div class="field">
+                    <input type="text" placeholder="Usuario" name="user" id="user" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Password" name="passwrd" id="passwrd" required>
+                </div>
+                <p class="access">User: admin  /  Pass: admin.</p>
+                <div class="field">
+                    <button id="login">Entrar</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="game" id="game">
+        <div class="title-game">Piedra / Papel / Tijeras</div>
+        <div class="content">
+            <div class="group-game">
+                <b id="finalResult"></b>
+                <div class="score-game">            
+                    <p id="gamer">Resultado: -</p>
+                </div>
+                <div>          
+                    <p id="turn">Turno N°</p>
+                </div>
+                <div class="result-game">
+                    <div class="gamer-img">
+                        <p>Jugador</p>
+                        <img src="./img/Piedra.png" alt="" id="gamer-img">
+                    </div>
+                    <div class="gamer-ia-img">
+                        <p>Maquina</p>
+                        <img src="./img/Piedra.png" alt="" id="gamer-ia-img">
+                    </div>
+                </div>
+                <div class="container-game">
+                    <p class="text-game" id="text-game">Selecciona: </p>
+                    <div class="group-btn" id="group-btn">
+                        <button id="rock"> 
+                            <img src="./img/Piedra.png" alt="">
+                        </button>
+                        <button id="paper"> 
+                            <img src="./img/Papel.png" alt="">
+                        </button>
+                        <button id="scissors"> 
+                            <img src="./img/Tijeras.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="go">Comencemos!</button>
+                    <button id="exit"></button>
+                </div>
+            </div>
+            <div class="record-score">
+                <div class="text-record-score">Últimas partidas: <br><br></div>
+                <div class="group-record">
+                    <ol id="record-score">            
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>   
+</body>
+</html>
